@@ -1,13 +1,49 @@
 ctrl.startup = function()  {
     $(".contactForm").animate({top:$(window).height()-32},0);   
 
-    if ('<%=bi.client.category%>' === 'mobile' || '<%=bi.client.category%>' === 'tablet') {    
-        mobileContact();
-    } 
+    if ('<%=bi.client.category%>' === 'mobile') {    
+      mobileContact();
+    }
+    else if ('<%=bi.client.category%>' === 'tablet') {
+      tabletContact();
+    }
     else {
       sideBarClick();
     }; 
 };
+
+function tabletContact(){
+      var defaultWidth = '210px';
+      var openWidth = $(window).width()-60;
+      var defaultHeight = $(window).height()-60;
+      var openHeight = '500px';
+      var time = 100;
+      ctrl.sel(".down").hide(); 
+      ctrl.sel(".up").hide();
+
+      ctrl.sel(".contactForm").css('width', defaultWidth); 
+      ctrl.sel(".contactForm").animate({top: defaultHeight}, time); 
+      ctrl.sel(".contactForm").addClass('tablet'); 
+      
+      ctrl.sel(".contactTitle").click(function(event){          
+          ctrl.sel(".contactForm").css('width', openWidth);
+          ctrl.sel(".contactForm").animate({height: openHeight}, time, null ,function() {
+            window.scroll(0, window.pageYOffset + 500);
+          });
+          ctrl.sel(".up").hide(); 
+          ctrl.sel(".down").show();
+          ctrl.sel(".contactContent").css ('display', 'block');  
+      });
+
+      ctrl.sel(".down").click(function(event){
+          ctrl.sel(".contactForm").css('width', defaultWidth);
+          ctrl.sel(".contactForm").animate({top: defaultHeight}, time);  
+          ctrl.sel(".down").hide(); 
+          ctrl.sel(".up").hide(); 
+          ctrl.sel(".contactContent").css('display', 'none'); 
+          ctrl.sel(".contactForm").css('height', '60px');   
+      });
+}
 
 function mobileContact(){
       var defaultWidth = '250px';
@@ -15,43 +51,44 @@ function mobileContact(){
       var defaultHeight = $(window).height()-60;
       var openHeight = '550px';
       var time = 100;
-      $(".down").hide(); 
-      $(".up").hide();
+      ctrl.sel(".down").hide(); 
+      ctrl.sel(".up").hide();
 
-      $(".contactForm").css('width', defaultWidth); 
-      $(".contactForm").animate({top: defaultHeight}, time); 
+      ctrl.sel(".contactForm").css('width', defaultWidth); 
+      ctrl.sel(".contactForm").animate({top: defaultHeight}, time); 
       ctrl.sel(".contactForm").addClass('mobile'); 
       
-      $(".contactTitle").click(function(event){          
-          $(".contactForm").css('width', openWidth);
-          $(".contactForm").animate({height: openHeight}, time, null ,function() {
+      ctrl.sel(".contactTitle").click(function(event){          
+          ctrl.sel(".contactForm").css('width', openWidth);
+          ctrl.sel(".contactForm").animate({height: openHeight}, time, null ,function() {
             window.scroll(0, window.pageYOffset + 550);
           });
-          $(".up").hide(); 
-          $(".down").show();
-          $(".contactContent").css ('display', 'block');  
+          ctrl.sel(".up").hide(); 
+          ctrl.sel(".down").show();
+          ctrl.sel(".contactContent").css ('display', 'block');  
       });
-      $(".down").click(function(event){
-          $(".contactForm").css('width', defaultWidth);
-          $(".contactForm").animate({top: defaultHeight}, time);  
-          $(".down").hide(); 
-          $(".up").hide(); 
-          $(".contactContent").css('display', 'none'); 
-          $(".contactForm").css('height', '75px');   
+
+      ctrl.sel(".down").click(function(event){
+          ctrl.sel(".contactForm").css('width', defaultWidth);
+          ctrl.sel(".contactForm").animate({top: defaultHeight}, time);  
+          ctrl.sel(".down").hide(); 
+          ctrl.sel(".up").hide(); 
+          ctrl.sel(".contactContent").css('display', 'none'); 
+          ctrl.sel(".contactForm").css('height', '75px');   
       });
 };
 
 function sideBarClick(){
-    $(".down").hide();
-    $(".up").click(function(event){ 
-        $(".contactForm").animate({top:$(window).height()-280},100);           
-        $(".down").show();
-        $(".up").hide();       
+    ctrl.sel(".down").hide();
+    ctrl.sel(".up").click(function(event){ 
+        ctrl.sel(".contactForm").animate({top:$(window).height()-280},100);           
+        ctrl.sel(".down").show();
+        ctrl.sel(".up").hide();       
     });
-    $(".down").click(function(event){
-        $(".contactForm").animate({top:$(window).height()-32},100);       
-        $(".up").show();
-        $(".down").hide();
+    ctrl.sel(".down").click(function(event){
+        ctrl.sel(".contactForm").animate({top:$(window).height()-32},100);       
+        ctrl.sel(".up").show();
+        ctrl.sel(".down").hide();
     });       
 };
 
