@@ -15,14 +15,14 @@ function nav() {
     	i--;
 	    if(i<0){i=0}
         ctrl.sel("#sequence ul li").hide();
-        ctrl.sel("#sequence ul li:eq("+i+")").fadeIn(1000);        
+        ctrl.sel("#sequence ul li:eq("+i+")").fadeIn(2000);        
     });
 
     ctrl.sel('.next').click(function() {
     	i++;
-	    if(i>1){i=1}
+	    if(i>2){i=2}
         ctrl.sel("#sequence ul li").hide();
-        ctrl.sel("#sequence ul li:eq("+i+")").fadeIn(1000);        
+        ctrl.sel("#sequence ul li:eq("+i+")").fadeIn(2000);        
     });
 
     // desktop、tablet
@@ -30,7 +30,7 @@ function nav() {
         var num=$(this).index()
 
         ctrl.sel("#sequence ul li").hide();
-        ctrl.sel("#sequence ul li:eq("+num+")").fadeIn(1000);
+        ctrl.sel("#sequence ul li:eq("+num+")").fadeIn(2000);
 
         ctrl.sel("#nav li span").removeClass("active")
         ctrl.sel("#nav li span:eq("+num+")").addClass("active")             
