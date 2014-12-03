@@ -129,7 +129,7 @@
 /*SLIDE 3 ANIMATIONS */
 .title.three { 
   width: 27%; 
-  left: 52%; 
+  left: 50%; 
   bottom: 10%; 
 }
 .title.three.animate-in { 
@@ -140,7 +140,7 @@
 }
 .subtitle.three { 
   width: 27%; 
-  left: 52%; 
+  left: 50%; 
 }
 .subtitle.three.animate-in { 
   top: 90%; 
@@ -231,6 +231,9 @@
 /* =======================================
    Mobile STYLE
    ======================================= */
+.mobile.wrapper {
+  margin-top: 160px !important;
+}
 .mobile #sequence ul li .title {
   font-size: 4.2em;
   line-height: 1.2em;
@@ -266,8 +269,8 @@
 
 /*SLIDE 2 ANIMATIONS */
 .mobile .title.two {  
-  left: 12%;
-  width: 45%;  
+  width: 45%;
+  left: 12%;    
 }
 .mobile .title.two.animate-in { 
   bottom: 6%; 
@@ -276,8 +279,8 @@
   opacity: 0;
 }
 .mobile .subtitle.two {  
-  left: 12%;
-  width: 45%;     
+  width: 45%;
+  left: 12%;       
 }
 .mobile .subtitle.one.animate-in { 
   top: 96%; 
@@ -292,8 +295,8 @@
 
 /*SLIDE 3 ANIMATIONS */
 .mobile .title.three { 
-  width: 45% !important; 
-  left: 45% !important; 
+  width: 40%; 
+  left: 35%; 
   bottom: 10%; 
 }
 .mobile .title.three.animate-in { 
@@ -303,8 +306,8 @@
   opacity: 0;
 }
 .mobile .subtitle.three { 
-  width: 45% !important; 
-  left: 45% !important; 
+  width: 40%; 
+  left: 35%; 
 }
 .mobile .subtitle.three.animate-in { 
   top: 98%; 
@@ -331,7 +334,7 @@
   border-radius: 50px; 
   z-index: 9999; 
   cursor: pointer; 
-  top: 20%;
+  top: 25%;
   background: rgba(0, 0, 0, .1);
   -webkit-transition-duration: 1s; 
   -moz-transition-duration: 1s; 
@@ -474,7 +477,7 @@
     border-radius: 50px; 
     z-index: 9999; 
     cursor: pointer; 
-    top: 40%;
+    top: 45%;
     background: rgba(0, 0, 0, .1);
     -webkit-transition-duration: 1s; 
     -moz-transition-duration: 1s; 
@@ -484,7 +487,8 @@
   }  
   .prev { 
     left: -50px; 
-    background-position: 40px center !important;}
+    background-position: 40px center !important;
+  }
   .next { 
     right: -50px; 
     background-position: -120px center !important;  
