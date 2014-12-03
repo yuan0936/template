@@ -50,27 +50,27 @@ span {
    ======================================= */
 
 .mobile h1 {
-	margin: 2em auto !important;
-	height: 42px !important;	
+	margin: 2em auto;
+	height: 42px;	
 }
 .mobile span {
-	font-size: 2em !important;
+	font-size: 2em;
 }
 .mobile .setHeight {
-	margin-top: 2em !important;
-	height: 450px !important;
+	margin-top: 2em;
+	height: 450px;
 }
 .mobile i {
-	margin-top: 0px !important;
-	font-size: 13em !important;
+	margin-top: 0px;
+	font-size: 13em;
 }
 .mobile h2 {
-	font-size: 4em !important;
-	line-height: 2em !important;
+	font-size: 4em;
+	line-height: 2em;
 }
 .mobile p {
-	font-size: 3.2em !important;
-	line-height: 1.4em  !important;
+	font-size: 3.2em;
+	line-height: 1.4em;
 }
 
 

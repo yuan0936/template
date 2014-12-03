@@ -35,7 +35,7 @@ p {
 	line-height: 1.6em;
 	text-indent: 0.6em;
 	text-align: left;
-	word-wrap: break-word!important; 
+	word-wrap: break-word; 
 }
 p + p {
 	margin-top: -10px;
@@ -46,15 +46,15 @@ p + p {
    ======================================= */
 
 .mobile h1 {
-	margin: 2em auto  !important;
-	height: 42px  !important;
+	margin: 2em auto;
+	height: 42px;
 }
 .mobile span {
-	font-size: 2em  !important;
+	font-size: 2em;
 }
 .mobile p {
-	font-size: 3.2em  !important;
-	line-height: 1.4em  !important;	
+	font-size: 3.2em;
+	line-height: 1.4em;	
 }
 
 /* =======================================

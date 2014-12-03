@@ -59,33 +59,67 @@
    ======================================= */
 
 /*SLIDE 1 ANIMATIONS */
-.title.one { width: 27%; left: 52%; bottom: 10%; }
-.title.one.animate-in { bottom: 6%; }
-.title.one.animate-out { opacity: 0;}
-
-.subtitle.one { width: 27%; left: 52%; }
-.subtitle.one.animate-in { top: 96%; }
-.subtitle.one.animate-out { opacity: 0;}
-/*Image*/
-.slide.one { 
-  bottom: -28% !important; left: 24%; 
-  max-width: 578px; max-height: 754px !important; 
+.title.one { 
+  width: 27%; 
+  left: 52%; 
+  bottom: 10%; 
 }
-.slide.one.animate-in { bottom: -50%; }
-.slide.one.animate-out { opacity: 0;}
+.title.one.animate-in { 
+  bottom: 6%; 
+}
+.title.one.animate-out { 
+  opacity: 0;
+}
+.subtitle.one { 
+  width: 27%; 
+  left: 52%; 
+}
+.subtitle.one.animate-in { 
+  top: 96%; 
+}
+.subtitle.one.animate-out { 
+  opacity: 0;
+}
+ /*Image*/
+.slide.one { 
+  bottom: -28%; 
+  left: 24%; 
+  max-width: 578px;
+  max-height: 754px; 
+}
+.slide.one.animate-in { 
+  bottom: -50%;
+}
+.slide.one.animate-out { 
+  opacity: 0;
+}
 
 /*SLIDE 2 ANIMATIONS */
-.title.two { width: 27%; left: 22%; bottom: 5%;}
-.title.two.animate-in { bottom: 6%;}
-.title.two.animate-out { opacity: 0;}
-
-.subtitle.two { width: 27%; left: 22%;} 
-.subtitle.two.animate-in { top: 96%;}
-.subtitle.two.animate-out { opacity: 0;}
-/*Image*/
+.title.two { 
+  width: 27%;
+  left: 22%;
+  bottom: 5%;
+}
+.title.two.animate-in { 
+  bottom: 6%;
+}
+.title.two.animate-out { 
+  opacity: 0;
+}
+.subtitle.two { 
+  width: 27%; 
+  left: 22%;
+} 
+.subtitle.two.animate-in { 
+  top: 96%;
+}
+.subtitle.two.animate-out { 
+  opacity: 0;
+}
+ /*Image*/
 .slide.two { 
-  left: 60%!important; 
-  bottom: -40%!important;  
+  left: 60%; 
+  bottom: -40%;  
   max-width: 573px; 
   max-height: 754px;
 }
@@ -94,7 +128,9 @@
   opacity: 1; 
   bottom: -50%;
 }
-.slide.two.animate-out { left: 40%;}
+.slide.two.animate-out { 
+  left: 40%;
+}
 
 /* ========================================
    GLOBAL ANIMATION SPEEDS
@@ -197,7 +233,7 @@
   top: 98%; 
 }
 .mobile .slide.one { 
-  bottom: -30% !important; 
+  bottom: -30%; 
   left: 10%;  
 }
 
@@ -228,12 +264,12 @@
 }
 /*SLIDER NAV DOTS*/
 .mobile #nav { 
-  display: none !important; 
+  display: none; 
 }
 .mobile .prevNext { 
   display: block; 
   width: 100%;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 .mobile .next, .mobile .prev {
   position: absolute; 
@@ -253,10 +289,11 @@
 }  
 .mobile .prev { 
   left: -50px; 
-  background-position: 40px center !important;}
+  background-position: 40px center;
+}
 .mobile .next { 
   right: -50px; 
-  background-position: -120px center !important;  
+  background-position: -120px center;  
 }
 .next:hover, .prev:hover {
   background-color: rgba(0, 0, 0, .6);
@@ -271,7 +308,7 @@
    SET DIFFERENT SCREEN
    ======================================= */
 
-@media screen and (max-width: 1087px){
+@media screen and (max-width: 1087px) {
   /* SLIDE 1 ANIMATIONS */
   #sequence .title.one { 
     width: 45%!important; 

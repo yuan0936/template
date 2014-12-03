@@ -40,8 +40,7 @@ i {
   font-size: 1.8em;
   color: #4d4d4d;
   line-height: 1.5em;
-  text-align: center;
-  /*border-bottom: 1px solid #2EA0D1;*/          
+  text-align: center;           
 }
 .list {
   margin: 7px;  
@@ -88,22 +87,22 @@ small {
   padding: 0 40px !important;
 }
 .mobile .type {
-  margin-bottom: 4em !important;
+  margin-bottom: 4em;
 }
 .mobile span {
-  font-size: 3.5em !important;
-  line-height: 1.5em !important;
+  font-size: 3.5em;
+  line-height: 1.5em;
 }
 .mobile .list {
-  border-bottom: 5px dotted #bcbcbc !important;
+  border-bottom: 5px dotted #bcbcbc;
 }
 .mobile .list:last-child {
   border-bottom: none !important;
 }
 .mobile .subhead {
-  font-size: 3em !important;
-  line-height: 2em !important;
+  font-size: 3em;
+  line-height: 2em;
 }
 .mobile small {
-  font-size: 2.5em !important;
+  font-size: 2.5em;
 }

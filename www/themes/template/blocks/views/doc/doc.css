@@ -1,6 +1,5 @@
 .wrapper {
   margin: 50px 0px 0px;
- /* padding: 50px 10px 50px 20px;*/
   padding: 50px 0 ;
   background: #f5f5f5;
 }
@@ -11,16 +10,11 @@
 }
 .article {  
   border-radius: 20px;
-  /*margin: 20px 250px 20px 50px;*/ 
   margin: 20px 260px 20px 0px;  
   padding-bottom: 8em;
   padding-top: 2em;
-  /*padding-right: 4em;
-  padding-left: 4em;*/
   min-height: 800px; 
-  height: auto;     
-  /*position: relative;
-  overflow: visible;*/
+  height: auto;
   background: #f5f5f5;  
   color: #4a4a4a;
   font-weight: normal;
@@ -74,8 +68,7 @@
   font-weight: bold;
 }        
 p + h3, p + h4,
-ul + h4, pre + p,
-pre + h3, pre + h4,
+pre + p, pre + h3, pre + h4,
 ol + h4, ul + h4 {
   margin-top: 1.8em;
 }
@@ -130,7 +123,6 @@ ol li a:hover {
   color: rgba(255,255,255,1);
   background: rgba(200,200,200, 0.5);
 }
-
 .viewside {
   width: 230px;  
   min-height: 600px;    
@@ -152,51 +144,51 @@ ol li a:hover {
   width: 100% !important;
 }
 .mobile .article {
-  margin-right: 50px !important;
-  padding: 100px 40px 8em 80px !important;
-  font-weight: normal !important;
+  margin-right: 50px;
+  padding: 100px 40px 8em 80px;
+  font-weight: normal;
 }
 .mobile h1 { 
-  font-size: 4.5em !important; 
-  line-height: 1.2em !important;  
+  font-size: 4.5em; 
+  line-height: 1.2em;  
 }
 .mobile h3 {
-  font-size: 3.6em !important;
-  line-height: 1.2em !important;  
+  font-size: 3.6em;
+  line-height: 1.2em;  
 }
 .mobile h4 {
-  font-size: 3.4em !important;
+  font-size: 3.4em;
 }
 .mobile p {
-  font-size: 3.2em !important;
-  line-height: 1.2em !important;
+  font-size: 3.2em;
+  line-height: 1.2em;
 }
 .mobile ol {
-  -webkit-margin-before: 0em !important;
-  -webkit-margin-after: 0em !important;
-  -webkit-padding-start: 0px !important;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-padding-start: 0px;
 }
 .mobile ul li, .mobile ol li {
-  font-size: 3.2em !important;
-  line-height: 1.2em !important;  
+  font-size: 3.2em;
+  line-height: 1.2em;  
 }
 .mobile pre {
-  width: 100% !important;
-  overflow: auto !important;     
+  width: 100%;
+  overflow: auto;     
 }
 .mobile pre code {
-  font-size: 3em !important;
-  word-break: break-all !important;
+  font-size: 3em;
+  word-break: break-all;
 }
 .mobile .strTime {
-  font-size: 3em !important;  
+  font-size: 3em;  
 }
 .mobile .gotop {
-  right: 70px !important;
-  bottom: 900px !important;
+  right: 70px;
+  bottom: 900px;
   width: 85px;
   height: 85px;
-  font-size: 5em !important;
+  font-size: 5em;
 }
 
 /* =======================================

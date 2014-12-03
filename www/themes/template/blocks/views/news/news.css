@@ -61,29 +61,29 @@
    ======================================= */
 
 .mobile .maincontent {
-  width: 100% !important;
+  width: 100%;
 }
 .mobile .section {
   margin-bottom: 4em
 }
 .mobile img {
-  float: none !important;
-  display: block !important;
-  width: 80% !important;
-  margin: 30px auto 60px !important;
+  float: none;
+  display: block;
+  width: 80%;
+  margin: 30px auto 60px;
 }
 .mobile h4 {
-  font-size: 3.5em !important;
-  width: 100% !important;
+  font-size: 3.5em;
+  width: 100%;
 }
 .mobile p {
-  font-size: 3.2em !important;
-  line-height: 1.2em !important;
-  width: 100% !important;
+  font-size: 3.2em;
+  line-height: 1.2em;
+  width: 100%;
 }
 .mobile .gotop {
-  right: 70px !important;
-  bottom: 850px !important;
+  right: 70px;
+  bottom: 850px;
   width: 85px;
   height: 85px;
   font-size: 5em !important;
